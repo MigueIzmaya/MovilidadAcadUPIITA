@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Recuperar Contraseña - Movilidad Académica UPIITA-IPN</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+    <!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets2/css/main.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <noscript>
+        <link rel="stylesheet" href="assets2/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-loading">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <div id="bg"></div>
+
+        <!-- Main -->
+        <section id="main">
+            <header>
+                <span class="avatar"><img src="images/logoMovilidad.png" alt="Logo Movilidad UPIITA" /></span>
+                <h1>Recuperación de cuenta</h1>
+            </header>
+
+            <hr />
+
+            <form method="post" action="#">
+                <h2>Ingresa tu número de boleta</h2>
+                <div class="field">
+                    <input type="number" name="boleta" id="boleta" placeholder="Boleta" />
+                </div>
+                <h2>Ingresa el correo electrónico al cual está asociada tu cuenta</h2>
+                <div class="field">
+                    <input type="text" name="correo" id="correo" placeholder="direccion@dominio.com" />
+                </div>
+                <ul class="actions">
+                    <li><a href="#" class="button">Enviar mensaje de recuperación</a></li>
+                </ul>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; Departamento de Extensión y Apoyo Educativos. UPIITA - IPN. 2016</li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+    <script>
+        if ('addEventListener' in window) {
+            window.addEventListener('load', function () {
+                document.body.className = document.body.className.replace(/\bis-loading\b/, '');
+            });
+            document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+        }
+    </script>
+
+</body>
+
+</html>

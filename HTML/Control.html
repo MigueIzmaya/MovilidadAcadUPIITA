@@ -1,0 +1,365 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Administrador - UPIITA Movilidad Académica </title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" />-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+
+<body class="right-sidebar">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header-wrapper">
+            <div id="header">
+                <!-- Logo -->
+                <h1>Panel de Control</h1>
+                <h2></h2>
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li class="current"><a href="Control.html">Consulta de perfiles</a></li>
+                        <li><a href="AdminUniversidades.html">Admin de contenido</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Main -->
+        <div id="main-wrapper">
+            <div class="container">
+                <div class="row">
+
+                    <div class="3u 12u(mobile)">
+
+                        <!-- Búsqueda -->
+                        <section class="box">
+                            <header align="center">
+                                <h2>Elija los criterios de su búsqueda</h2>
+                            </header>
+
+                            <ul class="divided" align="center">
+                                <li>
+                                    <p>DESTINO</p>
+                                    <form>
+                                        <select id="selectPais" name="selectPais">
+                                            <option value="*">País (Todos)</option>
+                                        </select>
+
+                                        <select id="selectUniversidad" name="selectUniversidad">
+                                            <option value="*">Universidad (Todas)</option>
+                                        </select>
+                                    </form>
+                                </li>
+                                <li>
+                                    <p>ESTUDIANTE</p>
+                                    <form>
+                                        <select id="selectCarrera" name="selectCarrera">
+                                            <option value="*">Carera (Todas)</option>
+                                            <option value="Biónica">Biónica</option>
+                                            <option value="Mecatrónica">Mecatrónica</option>
+                                            <option value="Telemática">Telemática</option>
+                                        </select>
+
+                                        <select id="selectEstado" name="selectEstado">
+                                            <option value="*">Estado (Todos)</option>
+                                            <option value="Aspirante">Aspirante</option>
+                                            <option value="Postulado">Postulado</option>
+                                            <option value="Rechazado">Rechazado</option>
+                                            <option value="Movilidad">Movilidad</option>
+                                            <option value="Movilidad Concluíd">Movilidad Concluída</option>
+                                            <option value="Coach">Coach</option>
+                                        </select>
+
+                                        <select id="selectGeneracion" name="selectGeneracion">
+                                            <option value="*">Generación (Todas)</option>
+                                            <option value="*">Todas</option>
+                                        </select>
+                                        </br>
+                                        <p>Semestre</p>
+                                        <ul class=actions>
+                                            <li>
+                                                <input type="radio" name="radioSemestreA" value="*" checked> Todos
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radioSemestreA" value="A"> A
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radioSemestreB" value="B"> B
+                                                <br>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                </li>
+                                <li>
+                                    <p>ESPECÍFICO</p>
+                                    <form>
+                                        <input type="text" id="textNombre" name="textNombre" placeholder="Nombre del alumno" />
+                                        <input type="number" id="textBoleta" name="textBoleta" placeholder="Boleta del alumno" />
+                                    </form>
+                                </li>
+                                <li>
+                                    <input type="button" id="buscarPerfiles" class="btnSubmit" value="BUSCAR" />
+                                </li>
+                            </ul>
+                        </section>
+
+
+                        <!--Exportación a otro sistema-->
+                        <section class="box">
+                            <form>
+                                <ul class="actions">
+                                    <li>
+                                        <input type="button" id="generarExcelSistema" class="btnSubmit" style="white-space: normal;" value="Generar Excel para sistema CCA-IPN" />
+                                    </li>
+
+                                </ul>
+                            </form>
+                            <p>Realice primero una búsqueda con los criterios que necesita*. No olvide emplear el Estado=Aspirante</p>
+                        </section>
+
+                    </div>
+
+
+                    <div class="9u 12u(mobile)">
+
+                        <!-- Resultados de la búsqueda -->
+                        <article class="box post">
+                            <header>
+                                <h3>Resultados de la búsqueda</h3>
+                                <p>Seleccione la boleta de cualquier estudiante para acceder a su información y administrar su movilidad. Para exportar la información* relacionada con los resultados a Excel, presione el siguiente botón</p>
+                            </header>
+                            <input type="button" id="exportarExcel" class="btnSubmit" value="Exportar a Excel estos resultados" />
+                            <br>
+                            <br>
+                            <table id="catalogoUniversidades">
+                                <tr>
+                                    <th>
+                                        Boleta
+                                    </th>
+                                    <th>
+                                        Estado
+                                    </th>
+                                    <th>
+                                        Nombre
+                                    </th>
+                                    <th>
+                                        Carrera
+                                    </th>
+                                    <th>
+                                        Celular
+                                    </th>
+                                    <th>
+                                        <p>gDrive</p>
+                                    </th>
+                                    <th>
+                                        <p>FB</p>
+                                    </th>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a href="#">2011640124</a>
+                                    </td>
+                                    <td>
+                                        <p>Movilidad</p>
+                                    </td>
+                                    <td>
+                                        <p>Lorem ipsum Lorem ipsum</p>
+                                    </td>
+                                    <td>
+                                        <p>Lorem ipsum</p>
+                                    </td>
+                                    <td>
+                                        <p>999999999</p>
+                                    </td>
+                                    <td>
+                                        <a href="#"><img src="assets/css/images/fbIcon.png"></img>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#"><img src="assets/css/images/gdriveIcon.png"></img>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a href="#">2011640124</a>
+                                    </td>
+                                    <td>
+                                        <p>Movilidad</p>
+                                    </td>
+                                    <td>
+                                        <p>Lorem ipsum Lorem ipsum</p>
+                                    </td>
+                                    <td>
+                                        <p>Lorem ipsum</p>
+                                    </td>
+                                    <td>
+                                        <p>999999999</p>
+                                    </td>
+                                    <td>
+                                        <a href="#"><img src="assets/css/images/fbIcon.png"></img>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#"><img src="assets/css/images/gdriveIcon.png"></img>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </article>
+
+                        <!-- Disclosure -->
+                        <article class="box post">
+                            <p>* En los archivos de Excel generados se cargarán todos campos de los estudiantes resultantes de la búsqueda, a excpeción del utilizado para el sistema de CCA-IPN, el cual contiene los siguientes campos: </p>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer-wrapper">
+            <section id="footer" class="container">
+                <div class="row">
+                    <div class="4u 12u(mobile)">
+                        <section>
+                            <header>
+                                <h2>Contacto</h2>
+                            </header>
+                            <ul class="social">
+                                <li><a class="icon fa-facebook" href="https://www.facebook.com/movilidad.upiita"><span class="label">Facebook</span></a></li>
+                                <li>
+                                    <h3>Movilidad Académica</br>
+										UPIITA</h3></li>
+                            </ul>
+                            <ul class="contact">
+                                <li>
+                                    <h3>Responsable</h3>
+                                    <p>Ing. Wendolyne Stephany Ramírez Olvera</p>
+                                </li>
+                                <li>
+                                    <h3>Dirección</h3>
+                                    <p>
+                                        Avenida Instituto Politécnico Nacional No. 2580</br>
+                                        Col Barrio la Laguna Ticomán, Gustavo A. Madero</br>
+                                        México D.F., C.P. 07340
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>Teléfono</h3>
+                                    <p>5729-6000 ext.56843</p>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+
+                    <div class="4u 12u(mobile)">
+                        <section>
+                            <header>
+                                <h2></br></h2>
+                            </header>
+                            <ul class="social">
+                                <li><a class="icon fa-cca" href="http://www.cca.ipn.mx"><span class="label">CCA</span></a></li>
+                                <li>
+                                    <h3>Coordinación de </br>
+										Cooperación Académica</h3></li>
+                            </ul>
+                            <ul class="contact">
+                                <li>
+                                    <h3>Responsable</h3>
+                                    <p>Dr. Enrique Durán Páramo</p>
+                                </li>
+                                <li>
+                                    <h3>Dirección</h3>
+                                    <p>
+                                        Unidad Profesional "Adolfo López Mateos"</br>
+                                        Edif. de la Secretaría de Extensión e Integración Social, Primer piso </br>
+                                        Av. Juan de Dios Bátiz, esq. Luis Enrique Erro </br>
+                                        Col. Residencial la Escalera</br>
+                                        C.P. 07738, México, D.F.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>Teléfono</h3>
+                                    <p>5729-6000 ext.58028</p>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+
+                    <div class="4u 12u(mobile)">
+                        <section>
+                            <header>
+                                <h2></br></h2>
+                            </header>
+                            <ul class="social">
+                                <li><a class="icon fa-ipn" href="http://www.ipn.mx"><span class="label">IPN</span></a></li>
+                                <li>
+                                    <h3>Instituto</br>
+										Politécnico Nacional</h3></li>
+                            </ul>
+                            <ul class="contact">
+                                <li>
+                                    <h3>Dirección</h3>
+                                    <p>
+                                        Av. Luis Enrique Erro S/N, Unidad Profesional Adolfo López Mateos</br>
+                                        Zacatenco, Delegación Gustavo A. Madero</br>
+                                        C.P. 07738, México, Distrito Federal
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>Teléfono</h3>
+                                    <p>5729-6000</p>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="12u">
+
+                        <!-- Copyright -->
+                        <div id="copyright">
+                            <ul class="links">
+                                <li>&copy; Departamento de Extensión y Apoyos Educativos</li>
+                                <li><a href="http://www.upiita.ipn.mx/">UPIITA-IPN</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/skel-viewport.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

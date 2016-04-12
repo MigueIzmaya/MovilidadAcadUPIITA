@@ -1,0 +1,51 @@
+
+
+/* BG */
+	@-moz-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-412.5px,0,0); -webkit-transform: translate3d(-412.5px,0,0); -o-transform: translate3d(-412.5px,0,0); -ms-transform: translate3d(-412.5px,0,0); transform: translate3d(-412.5px,0,0); } }
+	@-webkit-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-412.5px,0,0); -webkit-transform: translate3d(-412.5px,0,0); -o-transform: translate3d(-412.5px,0,0); -ms-transform: translate3d(-412.5px,0,0); transform: translate3d(-412.5px,0,0); } }
+	@-o-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-412.5px,0,0); -webkit-transform: translate3d(-412.5px,0,0); -o-transform: translate3d(-412.5px,0,0); -ms-transform: translate3d(-412.5px,0,0); transform: translate3d(-412.5px,0,0); } }
+	@-ms-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-412.5px,0,0); -webkit-transform: translate3d(-412.5px,0,0); -o-transform: translate3d(-412.5px,0,0); -ms-transform: translate3d(-412.5px,0,0); transform: translate3d(-412.5px,0,0); } }
+	@keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-412.5px,0,0); -webkit-transform: translate3d(-412.5px,0,0); -o-transform: translate3d(-412.5px,0,0); -ms-transform: translate3d(-412.5px,0,0); transform: translate3d(-412.5px,0,0); } }
+
+	#bg {
+		background-size: 412.5px auto;
+		width: 1237.5px;
+	}
+	
+/* Header */
+	
+	#header nav {
+		padding: 0 1em;
+	}
+	
+		body {
+		min-width: 320px;
+		overflow: scroll;
+	}
+	
+	#header1{
+			display:block;
+			font-size: 3.35em;
+			font-weight: 900;
+			letter-spacing: -0.035em;
+			line-height: 1em;
+			font-family: 'PT Sans', sans-serif;
+		}
+		
+		#header2{
+			display:block;
+			font-size: 5em;
+			font-weight: 10;
+			letter-spacing: -0.050em;
+			line-height: 1em;
+			font-family: 'Titillium Web', sans-serif;
+		}
+		
+		#header3 {
+			display:none;
+		}
+		
+		#header4 {
+			display:none;
+		}
+	

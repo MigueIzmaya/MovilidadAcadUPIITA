@@ -1,0 +1,68 @@
+
+
+	body {
+		min-width: 320px;
+		overflow: scroll;
+		
+	}
+
+	body, input, select, textarea {
+		font-size: 11pt;
+	}
+
+/* BG */
+	@-moz-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-300px,0,0); -webkit-transform: translate3d(-300px,0,0); -o-transform: translate3d(-300px,0,0); -ms-transform: translate3d(-300px,0,0); transform: translate3d(-300px,0,0); } }
+	@-webkit-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-300px,0,0); -webkit-transform: translate3d(-300px,0,0); -o-transform: translate3d(-300px,0,0); -ms-transform: translate3d(-300px,0,0); transform: translate3d(-300px,0,0); } }
+	@-o-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-300px,0,0); -webkit-transform: translate3d(-300px,0,0); -o-transform: translate3d(-300px,0,0); -ms-transform: translate3d(-300px,0,0); transform: translate3d(-300px,0,0); } }
+	@-ms-keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-300px,0,0); -webkit-transform: translate3d(-300px,0,0); -o-transform: translate3d(-300px,0,0); -ms-transform: translate3d(-300px,0,0); transform: translate3d(-300px,0,0); } }
+	@keyframes bg { 0% { -moz-transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -o-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0); } 100% { -moz-transform: translate3d(-300px,0,0); -webkit-transform: translate3d(-300px,0,0); -o-transform: translate3d(-300px,0,0); -ms-transform: translate3d(-300px,0,0); transform: translate3d(-300px,0,0); } }
+
+	#bg {
+		background-size: 300px auto;
+		width: 900px;
+	}
+
+/* Header */
+
+
+	#header p {
+		font-size: 1em;
+	}
+	
+		#header1{
+			display:block;
+			font-size: 3.35em;
+			font-weight: 900;
+			letter-spacing: -0.035em;
+			line-height: 1em;
+			font-family: 'PT Sans', sans-serif;
+		}
+		
+		#header2{
+			display:block;
+			font-size: 5em;
+			font-weight: 10;
+			letter-spacing: -0.050em;
+			line-height: 1em;
+			font-family: 'Titillium Web', sans-serif;
+		}
+		
+		#header3 {
+			display:none;
+		}
+		
+		#header4 {
+			display:none;
+		}
+
+	#header nav {
+		font-size: 1em;
+	}
+
+		#header nav a:hover {
+			font-size: 1em;
+		}
+
+		#header nav a:active {
+			font-size: 1em;
+		}

@@ -1,0 +1,489 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>(3) Nuevo Usuario - UPIITA Movilidad Académica </title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no,maximum-scale=1.0,minimum-width=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+
+<body class="no-sidebar">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header-wrapper">
+            <div id="header">
+                <!-- Logo -->
+                <h1>Bienvenido(a)</h1>
+                <h2>Ingresa a continuación tus datos</h2>
+            </div>
+        </div>
+        <!-- Main -->
+        <div id="main-wrapper">
+            <div class="container">
+
+                <!--Barra de progreso-->
+                <div class="checkout-wrap">
+                    <ul class="checkout-bar">
+                        <li class="previous visited">Datos básicos</li>
+                        <li class="previous visited">Idiomas</li>
+                        <li class="active">Movilidad Solicitada</li>
+                        <li>Datos económicos</li>
+                        <li>Crear usuario</li>
+                    </ul>
+                </div>
+
+                <!-- Content -->
+                <article class="box post">
+
+                    <div class="row">
+                        <div class="12u 12u(mobile)">
+                            <h2>Intercambio Solicitado</h2>
+                        </div>
+                    </div>
+
+                    <form>
+
+                        <!--Tipo de movilidad-->
+                        <div class="row">
+                            <div class="1u 0u(mobile)">
+                            </div>
+                            <div class="5u 12u(mobile)">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <h1>Tipo de Movilidad</h1></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="tipoMovilidad" id="mov_Nacional_check" value="Nacional" />Movilidad Nacional</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="tipoMovilidad" id="mov_Internacional_check" value="Internacional" />Movilidad Internacional</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <!--Selector de años-->
+                            <div class="5u 12u(mobile)">
+                                <label for="anioMovilidad">Año en que realizarás tu movilidad</label>
+                                <select id="anioMovilidad">
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                </select>
+                            </div>
+                            <div class="1u 0u(mobile)">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <!--Semestre a cursar-->
+                        <div class="row">
+                            <div class="1u 0u(mobile)">
+                            </div>
+                            <div class="5u 12u(mobile)">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <h1>Semestre a cursar</h1></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="tipoSemestre" id="sem_Ago_Dic_check" value="Agosto-Diciembre" />Agosto-Diciembre</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="tipoSemestre" id="sem_Ene_Mayo_check" value="Enero-Mayo" />Enero-Mayo</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="5u 12u(mobile)">
+                                <label for="semMovilidad">Semestre a cursar en movilidad</label>
+                                <input type="number" id="semMovilidad" placeholder="semestre + 2">
+                                <br>
+                                <p class="balloons">
+                                    Suma dos al semestre que cursas actualmente. Se puede cursar el décimo semestre únicamente en Movilidad Nacional
+                                </p>
+                            </div>
+                            <div class="1u 0u(mobile)">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+                            <div class="12u 12u(mobile)">
+                                <h2>Selección de opciones para estudiar</h2>
+                                <br>
+                                <p>A continuación selecciona las tres opciones donde te gustaría estudiar. Puedes filtrar y consultar opciones en el buscador que se muestra a continuación. Puedes cambiar posteriormente tus opciones en el apartado de <strong>Movilidad</strong> una vez que hayas creado tu perfil</p>
+                            </div>
+                        </div>
+
+                        <!--Buscador de Universidades-->
+                        <div class="row">
+                            <!--Filtro-->
+                            <div class="4u 12u(mobile)">
+                                <section class="box">
+                                    <header>
+                                        <h3>Elige los criterios de tu búsqueda</h3>
+                                    </header>
+                                    <table>
+                                        <tr>
+                                            <select id="comboBuscarPais">
+                                                <option disabled selected>Selecciona un PAÍS</option>
+                                                <option value="">lorem ipsum</option>
+                                                <option value="">lorem ipsum</option>
+                                                <option value="">lorem ipsum</option>
+                                                <option value="">lorem ipsum</option>
+                                            </select>
+                                            <br>
+                                        </tr>
+                                        <tr>
+                                            <select id="comboBuscarArear">
+                                                <option disabled selected>Selecciona un ÁREA DE ESTUDIO</option>
+                                                <option value="">lorem ipsum</option>
+                                                <option value="">lorem ipsum</option>
+                                                <option value="">lorem ipsum</option>
+                                                <option value="">lorem ipsum</option>
+                                            </select>
+                                        </tr>
+                                    </table>
+
+                                    <!--Submit-->
+                                    <div class="row">
+                                        <div class="12u 12u(mobile)" style="text-align:center">
+                                            <button class="btn btn-danger col-sm-offset-2" type="submit">Buscar</button>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+
+                            <!--Resultados-->
+                            <div class="8u 12u(mobile)">
+                                <article class="box post">
+
+                                    <table id="catalogoUniversidades">
+                                        <tr>
+                                            <th>País</th>
+                                            <th>Nombre</th>
+                                            <th>Idioma</th>
+                                            <th>Programa de Intercambio</th>
+                                            <th>Cúpo</th>
+                                            <th>Trámites Especiales</th>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                        </tr>
+                                    </table>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+                            <div class="12u 12u(mobile)">
+                                <h2>Ingresa aquí tus opciones</h2>
+                            </div>
+                        </div>
+
+                        <!--Selector de universidades-->
+                        <div class="row">
+                            <div class="1u 0u(mobile)">
+                            </div>
+
+                            <!--Selector de países-->
+                            <div class="5u 12u(mobile)">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <select id="selectPaisUno">
+                                                <option disabled selected>(1) Primer País</option>
+                                                <option value="">Lorem ipsum</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <select id="selectPaisDos">
+                                                <option disabled selected>(2) Segundo País</option>
+                                                <option value="">Lorem ipsum</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <select id="selectPaisTres">
+                                                <option disabled selected>(3) Tercer País</option>
+                                                <option value="">Lorem ipsum</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <!--Selector de universidades-->
+                            <div class="5u 12u(mobile)">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <select id="selectUniversidadUno">
+                                                <option disable disabled selected>(1) Primer Universidad</option>
+                                                <option value="">Lorem ipsum</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <select id="selectUniversidadDos">
+                                                <option disable seledisabled selectedcted>(2) Segunda Universidad</option>
+                                                <option value="">Lorem ipsum</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <select id="selectUniversidadTres">
+                                                <option disable disabled selected>(3) Tercera Universidad</option>
+                                                <option value="">Lorem ipsum</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="1u 0u(mobile)">
+                            </div>
+                        </div>
+
+                        <!--Submit-->
+                        <div class="row">
+                            <div class="12u 12u(mobile)" style="text-align:center">
+                                <button class="btn btn-danger col-sm-offset-2" type="submit">Siguiente</button>
+                            </div>
+                        </div>
+                    </form>
+            </div>
+        </div>
+        </article>
+
+    </div>
+    </div>
+    <!--<div class="4u 12u(mobile)">
+
+<!-- Sidebar
+<section class="box" id="boxPostulacion">
+<header align="center">
+<h2>Mi Postulación</h2>
+</header>
+<p align="center">Estas son tus universidades seleccionadas hasta el momento</p>
+
+<ul class="divided" align="center">
+<li>
+<p class="numOpc2">1</p>
+<img id="banderaUno" align="center" src="assets/css/images/noUniv.png" alt="Universidad asignada"/></br>
+<a id="univUno" href="#">Sin registrar</a>
+</li>
+<li>
+<p class="numOpc2">2</p>
+<img id="banderaDos" align="center" src="assets/css/images/noUniv.png" alt="Universidad asignada"/></br>
+<a id="univDos" href="#">Sin registrar</a>
+</li>
+<li>
+<p class="numOpc2">3</p><img id="banderaTres" align="center" src="assets/css/images/noUniv.png" alt="Universidad asignada"/></br>
+<a id="univTres" href="#">Sin registrar</a>
+</li>
+</ul>
+</section>
+
+-->
+
+
+    <!-- Footer -->
+    <div id="footer-wrapper">
+        <section id="footer" class="container">
+            <div class="row">
+                <div class="4u 12u(mobile)">
+                    <section>
+                        <header>
+                            <h2>Contacto</h2>
+                        </header>
+                        <ul class="social">
+                            <li><a class="icon fa-facebook" href="https://www.facebook.com/movilidad.upiita"><span class="label">Facebook</span></a></li>
+                            <li>
+                                <h3>Movilidad Académica</br>
+              UPIITA</h3></li>
+                        </ul>
+                        <ul class="contact">
+                            <li>
+                                <h3>Responsable</h3>
+                                <p>Ing. Wendolyne Stephany Ramírez Olvera</p>
+                            </li>
+                            <li>
+                                <h3>Dirección</h3>
+                                <p>
+                                    Avenida Instituto Politécnico Nacional No. 2580</br>
+                                    Col Barrio la Laguna Ticomán, Gustavo A. Madero</br>
+                                    México D.F., C.P. 07340
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Teléfono</h3>
+                                <p>5729-6000 ext.56843</p>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="4u 12u(mobile)">
+                    <section>
+                        <header>
+                            <h2></br></h2>
+                        </header>
+                        <ul class="social">
+                            <li><a class="icon fa-cca" href="http://www.cca.ipn.mx"><span class="label">CCA</span></a></li>
+                            <li>
+                                <h3>Coordinación de </br>
+                Cooperación Académica</h3></li>
+                        </ul>
+                        <ul class="contact">
+                            <li>
+                                <h3>Responsable</h3>
+                                <p>Dr. Enrique Durán Páramo</p>
+                            </li>
+                            <li>
+                                <h3>Dirección</h3>
+                                <p>
+                                    Unidad Profesional "Adolfo López Mateos"</br>
+                                    Edif. de la Secretaría de Extensión e Integración Social, Primer piso </br>
+                                    Av. Juan de Dios Bátiz, esq. Luis Enrique Erro </br>
+                                    Col. Residencial la Escalera</br>
+                                    C.P. 07738, México, D.F.
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Teléfono</h3>
+                                <p>5729-6000 ext.58028</p>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="4u 12u(mobile)">
+                    <section>
+                        <header>
+                            <h2></br></h2>
+                        </header>
+                        <ul class="social">
+                            <li><a class="icon fa-ipn" href="http://www.ipn.mx"><span class="label">IPN</span></a></li>
+                            <li>
+                                <h3>Instituto</br>
+                  Politécnico Nacional</h3></li>
+                        </ul>
+                        <ul class="contact">
+                            <li>
+                                <h3>Dirección</h3>
+                                <p>
+                                    Av. Luis Enrique Erro S/N, Unidad Profesional Adolfo López Mateos</br>
+                                    Zacatenco, Delegación Gustavo A. Madero</br>
+                                    C.P. 07738, México, Distrito Federal
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Teléfono</h3>
+                                <p>5729-6000</p>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="12u">
+
+                    <!-- Copyright -->
+                    <div id="copyright">
+                        <ul class="links">
+                            <li>&copy; Departamento de Extensión y Apoyos Educativos</li>
+                            <li><a href="http://www.upiita.ipn.mx/">UPIITA-IPN</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/skel-viewport.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

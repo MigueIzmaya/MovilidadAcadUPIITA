@@ -1,0 +1,421 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Usuario - UPIITA Movilidad Académica </title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" />-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+
+<body class="right-sidebar">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header-wrapper">
+            <div id="header">
+                <img id="banderaPostulacion" src="assets/css/images/upiita.png" alt="Universidad asignada" />
+                <!-- Logo -->
+                <h1>Nombre Completo</h1>
+                <h2 id="txtEstado">Estado</h2>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="Usuario.html#zonaMovilidad">Movilidad</a></li>
+                        <li><a href="Usuario.html#zonaUniversidad">Universidad</a></li>
+                        <li><a href="Usuario.html#zonaDatosGenerales">Datos Generales</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Main -->
+        <div id="main-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="12u 12u(mobile)">
+
+                        <!-- Cambio de postulación -->
+                        <article class="box post" id="zonaMovilidad">
+                            <header>
+                                <h2>Cambiar información de movilidad</h2>
+                            </header>
+                            <!--Estados del estudiante-->
+                            <h3>Cambiar estado</h3>
+                            <div class="checkout-wrap">
+                                <ul class="checkout-bar">
+
+                                    <li class="visited first">Aspirante
+                                    </li>
+
+                                    <li class="previous visited">Postulado</li>
+
+                                    <li class="previous visited">Movilidad</li>
+
+                                    <li class="active">M. Concluída</li>
+
+                                    <li class="">Coach</li>
+
+                                </ul>
+                            </div>
+                            <br>
+                            <br>
+
+                            <!--Asignación de universidades-->
+                            <div id="zonaUniversidades">
+                                <form style="text-align:center">
+                                    <hr></hr>
+                                    <h3>Asignación de CCA-IPN ó Aceptación en </h3>
+                                    <br>
+                                    <ul class=actions>
+                                        <li>
+                                            <input type="radio" name="radioUniversidad" value="" checked> Primera universidad (País)
+                                            <br>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="radioUniversidad" value="A"> Segunda universidad (País)
+                                            <br>
+
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="radioUniversidad" value="B"> Tercera universidad (País)
+                                            <br>
+
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+
+                            <!--Avisos-->
+                            <div id="zonaAvisos">
+                                <form style="text-align:center">
+                                    <hr></hr>
+                                    <h3>Escriba aquí avisos para el alumno</h3>
+                                    <p>(Ej. Asignación de universidad, cambio de estado, requisitos faltantes, etc.)</p>
+                                    <textarea placeholder="Inserte un breve texto de avisos ...."></textarea>
+                                </form>
+                            </div>
+
+                            <!--Rechazo-->
+                            <div id="zonaRechazo">
+                                <form style="text-align:center">
+                                    <hr></hr>
+                                    <ul class=actions>
+                                        <li>
+                                            <input type="checkbox" name="checkRechazado" value=""> ¿Rechazado?</input>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="checkRenuncia" value=""> (Seleccione si fue renuncia voluntaria)</input>
+                                        </li>
+                                        <li>
+                                            <input type="text" name="txtMotivosRechazo" placeholder="Ingrese los motivos" />
+
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+
+                            <!--Coach-->
+                            <div id="zonaCoach">
+                                <form style="text-align:center">
+                                    <hr></hr>
+                                    <ul class=actions>
+                                        <li>
+                                            <input type="checkbox" name="chechCoach" value=""> ¿Coach?</input>
+                                        </li>
+                                        <li>
+                                            <select id="selectPaises" name="selectPaises" multiple>
+                                                <option value="" disabled selected>Seleccione 1+ países</option>
+                                                <option value="">Lorem ipsum</option>
+                                                <option value="">Lorem ipsum</option>
+                                                <option value="">Lorem ipsum</option>
+                                                <option value="">Lorem ipsum</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <select id="selectAsesorados" name="selectAsesorados" multiple>
+                                                <option value="" disabled selected>Seleccione 1+ asesorados</option>
+                                                <option value="">Lorem ipsum</option>
+                                                <option value="">Lorem ipsum</option>
+                                                <option value="">Lorem ipsum</option>
+                                                <option value="">Lorem ipsum</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+
+
+                                </form>
+                            </div>
+
+                            <hr></hr>
+                            <div style="text-align:center">
+                                <input type="button" id="submitCambiosMovilidad" class="btnSubmit" value="Guardar todos los cambios" />
+                            </div>
+                        </article>
+
+
+                        <!--Datos de la universidad-->
+                        <article class="box post" id="zonaUniversidad">
+                            <section>
+                                <header>
+                                    <h2>Datos de Movilidad</h2>
+                                </header>
+                                <form class="cuadroSeleccion" style="text-align:center">
+                                    <!--Datos generales-->
+                                    <h3 id="tagUniversidad">Universidad: Lorem ipsum</h3>
+                                    <br>
+                                    <h3 id="tagSemestre">Semestre tipo A</h3>
+                                    <br>
+                                    <h3 id="tagCoach">Coach: Lorem ipsum</h3>
+                                    <br>
+                                    <h3 id="tagVuelo">Fechas de vuelo: DD/MM/AAAA - DD/MM/AAAA</h3>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <!--Foto-->
+                                    <ul class="actions">
+                                        <li>
+                                            <a href="#" class="image featured" style="max-width:10em; max-height:10em;" id="imgFoto" name="imgFoto"><img src="assets/css/images/noUniv.png" alt="" /></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="actions">
+                                        <li>
+                                            <input type="button" id="descargarFoto" class="btnSubmit" value="Descargar ..." />
+                                        </li>
+                                    </ul>
+
+                                    <!--Materias-->
+                                    <h3>Materias en curso</h3>
+                                    <table class="default" id="materias">
+                                        <tr>
+                                            <td>Materia</td>
+                                            <td>Calificación</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lorem impsum</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lorem impsum</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lorem impsum</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lorem impsum</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lorem impsum</td>
+                                            <td>10</td>
+                                        </tr>
+                                    </table>
+
+                                </form>
+                            </section>
+                        </article>
+
+
+                        <!--Datos generales-->
+                        <article class="box post" id=zonaDatosGenerales>
+                            <section>
+                                <section>
+                                    <header>
+                                        <h2>Datos Generales</h2>
+                                    </header>
+                                    <form class="cuadroSeleccion" style="text-align:center; width:70%;">
+                                        <!--Datos generales-->
+                                        <p id="tagIngresoMensual">Ingreso mensual:$99999.99</p>
+                                        <p id="tagDependientesIngresos">Dependientes del ingreso: Lorem ipsum</p>
+                                        <p id="tagEmpleo">Empleo: Lorem ipsum</p>
+                                        <p id="tagBeca">Beca Actual: Lorem ipsum</p>
+                                        <br>
+                                        <h3>Idiomas</h3>
+                                        <table class="default" id="materias">
+                                            <tr>
+                                                <td>Nombre</td>
+                                                <td>Nivel</td>
+                                                <td>Certificado</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lorem Ipsum</td>
+                                                <td>Lorem Ipsum</td>
+                                                <td>Lorem Ipsum</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lorem Ipsum</td>
+                                                <td>Lorem Ipsum</td>
+                                                <td>Lorem Ipsum</td>
+                                            </tr>
+                                        </table>
+
+                                        <!--Materias-->
+                                        <h3>Materias que desea tomar al volver</h3>
+                                        <table class="default" id="materiasVolver">
+                                            <tr>
+                                                <td>Lorem Ipsum</td>
+                                                <td>Lorem Ipsum</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lorem Ipsum</td>
+                                                <td>Lorem Ipsum</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lorem Ipsum</td>
+                                                <td>Lorem Ipsum</td>
+                                            </tr>
+                                        </table>
+
+                                    </form>
+                                </section>
+                        </article>
+
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer-wrapper">
+            <section id="footer" class="container">
+                <div class="row">
+                    <div class="4u 12u(mobile)">
+                        <section>
+                            <header>
+                                <h2>Contacto</h2>
+                            </header>
+                            <ul class="social">
+                                <li><a class="icon fa-facebook" href="https://www.facebook.com/movilidad.upiita"><span class="label">Facebook</span></a></li>
+                                <li>
+                                    <h3>Movilidad Académica</br>
+										UPIITA</h3></li>
+                            </ul>
+                            <ul class="contact">
+                                <li>
+                                    <h3>Responsable</h3>
+                                    <p>Ing. Wendolyne Stephany Ramírez Olvera</p>
+                                </li>
+                                <li>
+                                    <h3>Dirección</h3>
+                                    <p>
+                                        Avenida Instituto Politécnico Nacional No. 2580</br>
+                                        Col Barrio la Laguna Ticomán, Gustavo A. Madero</br>
+                                        México D.F., C.P. 07340
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>Teléfono</h3>
+                                    <p>5729-6000 ext.56843</p>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+
+                    <div class="4u 12u(mobile)">
+                        <section>
+                            <header>
+                                <h2></br></h2>
+                            </header>
+                            <ul class="social">
+                                <li><a class="icon fa-cca" href="http://www.cca.ipn.mx"><span class="label">CCA</span></a></li>
+                                <li>
+                                    <h3>Coordinación de </br>
+										Cooperación Académica</h3></li>
+                            </ul>
+                            <ul class="contact">
+                                <li>
+                                    <h3>Responsable</h3>
+                                    <p>Dr. Enrique Durán Páramo</p>
+                                </li>
+                                <li>
+                                    <h3>Dirección</h3>
+                                    <p>
+                                        Unidad Profesional "Adolfo López Mateos"</br>
+                                        Edif. de la Secretaría de Extensión e Integración Social, Primer piso </br>
+                                        Av. Juan de Dios Bátiz, esq. Luis Enrique Erro </br>
+                                        Col. Residencial la Escalera</br>
+                                        C.P. 07738, México, D.F.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>Teléfono</h3>
+                                    <p>5729-6000 ext.58028</p>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+
+                    <div class="4u 12u(mobile)">
+                        <section>
+                            <header>
+                                <h2></br></h2>
+                            </header>
+                            <ul class="social">
+                                <li><a class="icon fa-ipn" href="http://www.ipn.mx"><span class="label">IPN</span></a></li>
+                                <li>
+                                    <h3>Instituto</br>
+										Politécnico Nacional</h3></li>
+                            </ul>
+                            <ul class="contact">
+                                <li>
+                                    <h3>Dirección</h3>
+                                    <p>
+                                        Av. Luis Enrique Erro S/N, Unidad Profesional Adolfo López Mateos</br>
+                                        Zacatenco, Delegación Gustavo A. Madero</br>
+                                        C.P. 07738, México, Distrito Federal
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>Teléfono</h3>
+                                    <p>5729-6000</p>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="12u">
+
+                        <!-- Copyright -->
+                        <div id="copyright">
+                            <ul class="links">
+                                <li>&copy; Departamento de Extensión y Apoyos Educativos</li>
+                                <li><a href="http://www.upiita.ipn.mx/">UPIITA-IPN</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/skel-viewport.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>

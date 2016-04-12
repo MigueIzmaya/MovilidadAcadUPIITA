@@ -1,0 +1,334 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>(4) Nuevo Usuario - UPIITA Movilidad Académica </title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no,maximum-scale=1.0,minimum-width=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+
+<body class="no-sidebar">
+
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header-wrapper">
+            <div id="header">
+                <!-- Logo -->
+                <h1>Bienvenido(a)</h1>
+                <h2>Ingresa a continuación tus datos</h2>
+            </div>
+        </div>
+
+        <!-- Main -->
+        <div id="main-wrapper">
+            <div class="container">
+
+                <!--Barra de progreso-->
+                <div class="checkout-wrap">
+                    <ul class="checkout-bar">
+                        <li class="previous visited">Datos básicos</li>
+                        <li class="previous visited">Idiomas</li>
+                        <li class="previous visited">Movilidad Solicitada</li>
+                        <li class="active">Datos económicos</li>
+                        <li>Crear usuario</li>
+                    </ul>
+                </div>
+
+
+
+
+                <!-- Content -->
+                <article class="box post">
+
+                    <div class="row">
+                        <div class="12u 12u(mobile)">
+                            <h2>Situación Económica y Becas</h2>
+                            <br>
+                            <p>Contesta de forma honesta, solo es para información estadística para CCA (Incluyendo al solicitante y a la persona que aporta el ingreso)</p>
+                        </div>
+                    </div>
+
+                    <form>
+
+                        <!--Rangos de ingresos-->
+                        <div class="row">
+                            <div class="1u 0u(mobile)">
+                            </div>
+                            <div class="5u 12u(mobile)">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <h1>Ingreso familiar</h1></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="tipoIngreso" id="ingreso_1" value="De $1,870 a $5,600" />De $1,870 a $5,600</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="tipoIngreso" id="ingreso_2" value="Internacional" />De $5,600 a $11,220</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="tipoIngreso" id="ingreso_3" value="Internacional" />De $11,221 a $16,830</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="tipoIngreso" id="ingreso_4" value="Internacional" />Más de $16,831</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <!--Selector de años-->
+                            <div class="5u 12u(mobile)">
+                                <label for="anioMovilidad">Número de personas quienes dependen de éste ingreso</label>
+                                <input type="number" id="inputPersonasDepIngreso" placeholder="1,2,3 ..">
+                            </div>
+                            <div class="1u 0u(mobile)">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <!--Empleo y beca actual-->
+                        <div class="row">
+                            <div class="1u 0u(mobile)">
+                            </div>
+
+                            <!--Empleo-->
+                            <div class="5u 12u(mobile)">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <h1>Empleo y beca actual</h1></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="hasEmpleo" id="empleo_1" value="Estudiante" />Solamente estudio</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="hasEmpleo" id="empleo_2" value="Empleo" />Tengo un empleo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="text" id="inputEmpleo" placeholder="Ingresa el cargo de tu empleo actual">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <!--Beca actual-->
+                            <div class="5u 12u(mobile)">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <h1>Selecciona tu beca actual</h1></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="becaActual" id="beca_1" value="Ninguna" />Ninguna</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="becaActual" id="beca_2" value="Institucional" />Institucional</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="becaActual" id="beca_3" value="Manutención" />Manutención</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="becaActual" id="beca_4" value="Bécalos" />Bécalos</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="becaActual" id="beca_5" value="Télmex" />Télmex</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="becaActual" id="beca_6" value="Harp Helú" />Harp Helú</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="becaActual" id="beca_7" value="Otro" />Otro</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="text" id="inputBeca" placeholder="Ingresa el nombre de tu beca">
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="balloons">La información de tu beca es importante para poder realizar los trámites de revalidación correspondientes durante tu estancia de movilidad</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="1u 0u(mobile)">
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!--Submit-->
+                        <div class="row">
+                            <div class="12u 12u(mobile)" style="text-align:center">
+                                <button class="btn btn-danger col-sm-offset-2" type="submit">Registrar y crear usuario</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </article>
+
+            </div>
+        </div>
+
+
+
+        <!-- Footer -->
+        <div id="footer-wrapper">
+            <section id="footer" class="container">
+                <div class="row">
+                    <div class="4u 12u(mobile)">
+                        <section>
+                            <header>
+                                <h2>Contacto</h2>
+                            </header>
+                            <ul class="social">
+                                <li><a class="icon fa-facebook" href="https://www.facebook.com/movilidad.upiita"><span class="label">Facebook</span></a></li>
+                                <li>
+                                    <h3>Movilidad Académica</br>
+              UPIITA</h3></li>
+                            </ul>
+                            <ul class="contact">
+                                <li>
+                                    <h3>Responsable</h3>
+                                    <p>Ing. Wendolyne Stephany Ramírez Olvera</p>
+                                </li>
+                                <li>
+                                    <h3>Dirección</h3>
+                                    <p>
+                                        Avenida Instituto Politécnico Nacional No. 2580</br>
+                                        Col Barrio la Laguna Ticomán, Gustavo A. Madero</br>
+                                        México D.F., C.P. 07340
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>Teléfono</h3>
+                                    <p>5729-6000 ext.56843</p>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+
+                    <div class="4u 12u(mobile)">
+                        <section>
+                            <header>
+                                <h2></br></h2>
+                            </header>
+                            <ul class="social">
+                                <li><a class="icon fa-cca" href="http://www.cca.ipn.mx"><span class="label">CCA</span></a></li>
+                                <li>
+                                    <h3>Coordinación de </br>
+                Cooperación Académica</h3></li>
+                            </ul>
+                            <ul class="contact">
+                                <li>
+                                    <h3>Responsable</h3>
+                                    <p>Dr. Enrique Durán Páramo</p>
+                                </li>
+                                <li>
+                                    <h3>Dirección</h3>
+                                    <p>
+                                        Unidad Profesional "Adolfo López Mateos"</br>
+                                        Edif. de la Secretaría de Extensión e Integración Social, Primer piso </br>
+                                        Av. Juan de Dios Bátiz, esq. Luis Enrique Erro </br>
+                                        Col. Residencial la Escalera</br>
+                                        C.P. 07738, México, D.F.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>Teléfono</h3>
+                                    <p>5729-6000 ext.58028</p>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+
+                    <div class="4u 12u(mobile)">
+                        <section>
+                            <header>
+                                <h2></br></h2>
+                            </header>
+                            <ul class="social">
+                                <li><a class="icon fa-ipn" href="http://www.ipn.mx"><span class="label">IPN</span></a></li>
+                                <li>
+                                    <h3>Instituto</br>
+                  Politécnico Nacional</h3></li>
+                            </ul>
+                            <ul class="contact">
+                                <li>
+                                    <h3>Dirección</h3>
+                                    <p>
+                                        Av. Luis Enrique Erro S/N, Unidad Profesional Adolfo López Mateos</br>
+                                        Zacatenco, Delegación Gustavo A. Madero</br>
+                                        C.P. 07738, México, Distrito Federal
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3>Teléfono</h3>
+                                    <p>5729-6000</p>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="12u">
+
+                        <!-- Copyright -->
+                        <div id="copyright">
+                            <ul class="links">
+                                <li>&copy; Departamento de Extensión y Apoyos Educativos</li>
+                                <li><a href="http://www.upiita.ipn.mx/">UPIITA-IPN</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/skel-viewport.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
