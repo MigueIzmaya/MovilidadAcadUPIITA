@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idPaises: 1
+  nombre: MyString
+  url_bandera: MyString
+
+two:
+  idPaises: 1
+  nombre: MyString
+  url_bandera: MyString

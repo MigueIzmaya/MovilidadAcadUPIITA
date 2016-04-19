@@ -1,0 +1,310 @@
+<body class="no-sidebar">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header-wrapper">
+            <div id="header">
+                <!-- Logo -->
+                <h1>Bienvenido(a)</h1>
+                <h2>Ingresa a continuación tus datos</h2>
+            </div>
+        </div>
+        <!-- Main -->
+        <div id="main-wrapper">
+            <div class="container">
+
+                <!--Barra de progreso-->
+                <div class="checkout-wrap">
+                    <ul class="checkout-bar">
+                        <li class="previous visited">Datos básicos</li>
+                        <li class="previous visited">Idiomas</li>
+                        <li class="active">Movilidad Solicitada</li>
+                        <li>Datos económicos</li>
+                        <li>Crear usuario</li>
+                    </ul>
+                </div>
+
+                <!-- Content -->
+                <article class="box post">
+
+                    <div class="row">
+                        <div class="12u 12u(mobile)">
+                            <h2>Intercambio Solicitado</h2>
+                        </div>
+                    </div>
+
+                    <form>
+
+                        <!--Tipo de movilidad-->
+                        <div class="row">
+                            <div class="1u 0u(mobile)">
+                            </div>
+                            <div class="5u 12u(mobile)">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <h1>Tipo de Movilidad</h1></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="tipoMovilidad" id="mov_Nacional_check" value="Nacional" />Movilidad Nacional</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="tipoMovilidad" id="mov_Internacional_check" value="Internacional" />Movilidad Internacional</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <!--Selector de años-->
+                            <div class="5u 12u(mobile)">
+                                <label for="anioMovilidad">Año en que realizarás tu movilidad</label>
+                                <select id="anioMovilidad">
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                </select>
+                            </div>
+                            <div class="1u 0u(mobile)">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <!--Semestre a cursar-->
+                        <div class="row">
+                            <div class="1u 0u(mobile)">
+                            </div>
+                            <div class="5u 12u(mobile)">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <h1>Semestre a cursar</h1></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="tipoSemestre" id="sem_Ago_Dic_check" value="Agosto-Diciembre" />Agosto-Diciembre</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="tipoSemestre" id="sem_Ene_Mayo_check" value="Enero-Mayo" />Enero-Mayo</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="5u 12u(mobile)">
+                                <label for="semMovilidad">Semestre a cursar en movilidad</label>
+                                <input type="number" id="semMovilidad" placeholder="semestre + 2">
+                                <br>
+                                <p class="balloons">
+                                    Suma dos al semestre que cursas actualmente. Se puede cursar el décimo semestre únicamente en Movilidad Nacional
+                                </p>
+                            </div>
+                            <div class="1u 0u(mobile)">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+                            <div class="12u 12u(mobile)">
+                                <h2>Selección de opciones para estudiar</h2>
+                                <br>
+                                <p>A continuación selecciona las tres opciones donde te gustaría estudiar. Puedes filtrar y consultar opciones en el buscador que se muestra a continuación. Puedes cambiar posteriormente tus opciones en el apartado de <strong>Movilidad</strong> una vez que hayas creado tu perfil</p>
+                            </div>
+                        </div>
+
+                        <!--Buscador de Universidades-->
+                        <div class="row">
+                            <!--Filtro-->
+                            <div class="4u 12u(mobile)">
+                                <section class="box">
+                                    <header>
+                                        <h3>Elige los criterios de tu búsqueda</h3>
+                                    </header>
+                                    <table>
+                                        <tr>
+                                            <select id="comboBuscarPais">
+                                                <option disabled selected>Selecciona un PAÍS</option>
+                                                <option value="">lorem ipsum</option>
+                                                <option value="">lorem ipsum</option>
+                                                <option value="">lorem ipsum</option>
+                                                <option value="">lorem ipsum</option>
+                                            </select>
+                                            <br>
+                                        </tr>
+                                        <tr>
+                                            <select id="comboBuscarArear">
+                                                <option disabled selected>Selecciona un ÁREA DE ESTUDIO</option>
+                                                <option value="">lorem ipsum</option>
+                                                <option value="">lorem ipsum</option>
+                                                <option value="">lorem ipsum</option>
+                                                <option value="">lorem ipsum</option>
+                                            </select>
+                                        </tr>
+                                    </table>
+
+                                    <!--Submit-->
+                                    <div class="row">
+                                        <div class="12u 12u(mobile)" style="text-align:center">
+                                            <button class="btn btn-danger col-sm-offset-2" type="submit">Buscar</button>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+
+                            <!--Resultados-->
+                            <div class="8u 12u(mobile)">
+                                <article class="box post">
+
+                                    <table id="catalogoUniversidades">
+                                        <tr>
+                                            <th>País</th>
+                                            <th>Nombre</th>
+                                            <th>Idioma</th>
+                                            <th>Programa de Intercambio</th>
+                                            <th>Cúpo</th>
+                                            <th>Trámites Especiales</th>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                            <td>Lorem ipsum</td>
+                                        </tr>
+                                    </table>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="row">
+                            <div class="12u 12u(mobile)">
+                                <h2>Ingresa aquí tus opciones</h2>
+                            </div>
+                        </div>
+
+                        <!--Selector de universidades-->
+                        <div class="row">
+                            <div class="1u 0u(mobile)">
+                            </div>
+
+                            <!--Selector de países-->
+                            <div class="5u 12u(mobile)">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <select id="selectPaisUno">
+                                                <option disabled selected>(1) Primer País</option>
+                                                <option value="">Lorem ipsum</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <select id="selectPaisDos">
+                                                <option disabled selected>(2) Segundo País</option>
+                                                <option value="">Lorem ipsum</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <select id="selectPaisTres">
+                                                <option disabled selected>(3) Tercer País</option>
+                                                <option value="">Lorem ipsum</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <!--Selector de universidades-->
+                            <div class="5u 12u(mobile)">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <select id="selectUniversidadUno">
+                                                <option disable disabled selected>(1) Primer Universidad</option>
+                                                <option value="">Lorem ipsum</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <select id="selectUniversidadDos">
+                                                <option disable seledisabled selectedcted>(2) Segunda Universidad</option>
+                                                <option value="">Lorem ipsum</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <select id="selectUniversidadTres">
+                                                <option disable disabled selected>(3) Tercera Universidad</option>
+                                                <option value="">Lorem ipsum</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="1u 0u(mobile)">
+                            </div>
+                        </div>
+
+                        <!--Submit-->
+                        <div class="row">
+                            <div class="12u 12u(mobile)" style="text-align:center">
+                                <button class="btn btn-danger col-sm-offset-2" type="submit">Siguiente</button>
+                            </div>
+                        </div>
+                    </form>
+            </div>
+        </div>
+        </article>
+
+    </div>
+    </div>

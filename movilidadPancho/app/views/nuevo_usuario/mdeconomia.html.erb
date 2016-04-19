@@ -1,0 +1,183 @@
+<body class="no-sidebar">
+
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header-wrapper">
+            <div id="header">
+                <!-- Logo -->
+                <h1>Bienvenido(a)</h1>
+                <h2>Ingresa a continuación tus datos</h2>
+            </div>
+        </div>
+
+        <!-- Main -->
+        <div id="main-wrapper">
+            <div class="container">
+
+                <!--Barra de progreso-->
+                <div class="checkout-wrap">
+                    <ul class="checkout-bar">
+                        <li class="previous visited">Datos básicos</li>
+                        <li class="previous visited">Idiomas</li>
+                        <li class="previous visited">Movilidad Solicitada</li>
+                        <li class="active">Datos económicos</li>
+                        <li>Crear usuario</li>
+                    </ul>
+                </div>
+
+
+
+
+                <!-- Content -->
+                <article class="box post">
+
+                    <div class="row">
+                        <div class="12u 12u(mobile)">
+                            <h2>Situación Económica y Becas</h2>
+                            <br>
+                            <p>Contesta de forma honesta, solo es para información estadística para CCA (Incluyendo al solicitante y a la persona que aporta el ingreso)</p>
+                        </div>
+                    </div>
+
+                    <form>
+
+                        <!--Rangos de ingresos-->
+                        <div class="row">
+                            <div class="1u 0u(mobile)">
+                            </div>
+                            <div class="5u 12u(mobile)">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <h1>Ingreso familiar</h1></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="tipoIngreso" id="ingreso_1" value="De $1,870 a $5,600" />De $1,870 a $5,600</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="tipoIngreso" id="ingreso_2" value="Internacional" />De $5,600 a $11,220</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="tipoIngreso" id="ingreso_3" value="Internacional" />De $11,221 a $16,830</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="tipoIngreso" id="ingreso_4" value="Internacional" />Más de $16,831</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <!--Selector de años-->
+                            <div class="5u 12u(mobile)">
+                                <label for="anioMovilidad">Número de personas quienes dependen de éste ingreso</label>
+                                <input type="number" id="inputPersonasDepIngreso" placeholder="1,2,3 ..">
+                            </div>
+                            <div class="1u 0u(mobile)">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <!--Empleo y beca actual-->
+                        <div class="row">
+                            <div class="1u 0u(mobile)">
+                            </div>
+
+                            <!--Empleo-->
+                            <div class="5u 12u(mobile)">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <h1>Empleo y beca actual</h1></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="hasEmpleo" id="empleo_1" value="Estudiante" />Solamente estudio</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="hasEmpleo" id="empleo_2" value="Empleo" />Tengo un empleo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="text" id="inputEmpleo" placeholder="Ingresa el cargo de tu empleo actual">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <!--Beca actual-->
+                            <div class="5u 12u(mobile)">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <h1>Selecciona tu beca actual</h1></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="becaActual" id="beca_1" value="Ninguna" />Ninguna</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="becaActual" id="beca_2" value="Institucional" />Institucional</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="becaActual" id="beca_3" value="Manutención" />Manutención</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="becaActual" id="beca_4" value="Bécalos" />Bécalos</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="becaActual" id="beca_5" value="Télmex" />Télmex</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="becaActual" id="beca_6" value="Harp Helú" />Harp Helú</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="radio" name="becaActual" id="beca_7" value="Otro" />Otro</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="text" id="inputBeca" placeholder="Ingresa el nombre de tu beca">
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p class="balloons">La información de tu beca es importante para poder realizar los trámites de revalidación correspondientes durante tu estancia de movilidad</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="1u 0u(mobile)">
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!--Submit-->
+                        <div class="row">
+                            <div class="12u 12u(mobile)" style="text-align:center">
+                                <button class="btn btn-danger col-sm-offset-2" type="submit">Registrar y crear usuario</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </article>
+
+            </div>
+        </div>

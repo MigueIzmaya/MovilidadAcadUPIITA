@@ -1,0 +1,61 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  CURP: MyString
+  estado: MyString
+  contrasena: MyString
+  nombre: MyString
+  celular: MyString
+  carrera: MyString
+  promedio: 1.5
+  facebook: MyString
+  creditos: 1
+  priv_creditos: false
+  priv_boleta: false
+  priv_promedio: false
+  priv_facebook: false
+  motivos_rechazo: MyText
+  foto_univ: 
+  fecha_ida: 2016-02-28
+  fecha_vuelta: 2016-02-28
+  g_drive: MyString
+  encuesta_realizada: false
+  coach: MyString
+  boleta: MyString
+  tipoIntercambio: MyString
+  anioMovilidad: 1
+  tipoSemestre: 1
+  ingresoMensual: MyString
+  depIngreso: 1
+  empleo: MyString
+  becaActual: MyString
+
+two:
+  CURP: MyString
+  estado: MyString
+  contrasena: MyString
+  nombre: MyString
+  celular: MyString
+  carrera: MyString
+  promedio: 1.5
+  facebook: MyString
+  creditos: 1
+  priv_creditos: false
+  priv_boleta: false
+  priv_promedio: false
+  priv_facebook: false
+  motivos_rechazo: MyText
+  foto_univ: 
+  fecha_ida: 2016-02-28
+  fecha_vuelta: 2016-02-28
+  g_drive: MyString
+  encuesta_realizada: false
+  coach: MyString
+  boleta: MyString
+  tipoIntercambio: MyString
+  anioMovilidad: 1
+  tipoSemestre: 1
+  ingresoMensual: MyString
+  depIngreso: 1
+  empleo: MyString
+  becaActual: MyString

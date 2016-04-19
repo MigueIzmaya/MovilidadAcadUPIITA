@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  alumno: MyString
+  universidad: 1
+  asignacion: false
+  prioridad: 1
+
+two:
+  alumno: MyString
+  universidad: 1
+  asignacion: false
+  prioridad: 1

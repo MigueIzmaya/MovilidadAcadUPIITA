@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Inicio - Movilidad Académica UPIITA-IPN</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/ico" href="assets/favicon.ico" />
+
+    <%= stylesheet_link_tag 'indice/main.css', media: 'all', 'data-turbolinks' => true %>
+    <%= stylesheet_link_tag 'indice/noscript.css', media: 'all', 'data-turbolinks' => true %>
+    <%= stylesheet_link_tag 'indice/application.css', media: 'all', 'data-turbolinks' => true %>
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <%= csrf_meta_tags %>
+</head>
+
+<body class="is-loading">
+    <!--Ubicación del contenido-->
+    <%= yield %>
+</body>
+</html>

@@ -1,6 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:700);
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web:700);
 
+/* Hoja de estilo del contenido principal de la aplicación */
+
 /* Reset */
 
 html,
@@ -1104,7 +1106,7 @@ body {
 
 body {
     background: #252122;
-    background-image: url("images/bg02.png");
+    background-image: url("../bg02.png");
     font-family: 'Titillium Web', sans-serif;
     font-weight: 300;
     color: #5d5d5d;
@@ -1607,7 +1609,7 @@ ul.social li h3 {
 
 ul.social li a.fa-facebook {
     /*background: #3c5a98;*/
-    background-image: url("images/fb.png");
+    background-image: url("../fb.png");
 	background-size: 52px;
 }
 
@@ -1616,7 +1618,7 @@ ul.social li a.fa-facebook:hover {
 }
 
 ul.social li a.fa-cca {
-    background-image: url("images/cca.png");
+    background-image: url("../cca.png");
     background-size: 52px;
 }
 
@@ -1625,7 +1627,7 @@ ul.social li a.fa-cca:hover {
 }
 
 ul.social li a.fa-ipn {
-    background-image: url("images/ipn.png");
+    background-image: url("../ipn.png");
     background-size: 52px;
 }
 
@@ -1765,14 +1767,14 @@ ol.default li {
 #header-wrapper {
     position: relative;
     /*background: #ffffff;*/
-    background-image: url("images/worldMap8.jpg");
+    background-image: url("../worldMap8.jpg");
     background-position: center;
     border-bottom: solid 1px #ccc;
 }
 
 #main-wrapper {
     position: relative;
-    background: #f7f7f7 url("images/bg02.png");
+    background: #f7f7f7 url("../bg02.png");
 }
 
 #main-wrapper:before {
@@ -1781,14 +1783,14 @@ ol.default li {
     top: 0;
     left: 0;
     width: 100%;
-    background: url("images/bg01.png");
+    background: url("../bg01.png");
     background-size: 100% 100%;
     z-index: 0;
     opacity: 0.1;
 }
 
 #main-wrapper .major h2 {
-    background: #f7f7f7 url("images/bg02.png");
+    background: #f7f7f7 url("../bg02.png");
 }
 
 #footer-wrapper {
@@ -1802,7 +1804,7 @@ ol.default li {
     top: 0;
     left: 0;
     width: 100%;
-    background: url("images/bg01.png");
+    background: url("../bg01.png");
     background-size: 100% 100%;
     z-index: 0;
     opacity: 0.5;
@@ -2543,7 +2545,7 @@ ol.default li {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         /*content: '\f0c9';*/
-        content: url("images/pinUPIITA.png");
+        content: url("../pinUPIITA.png");
         /*background-image: url("images/pinUPIITA.png");*/
         display: block;
         position: absolute;
@@ -2583,7 +2585,7 @@ ol.default li {
         width: 275px;
         z-index: 10002;
         color: #858484;
-        background-image: url("images/bg02.png");
+        background-image: url("../bg02.png");
         box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.35);
     }
     #navPanel .link {
