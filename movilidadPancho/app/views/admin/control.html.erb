@@ -1,0 +1,217 @@
+<body class="right-sidebar">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header-wrapper">
+            <div id="header">
+                <!-- Logo -->
+                <h1>Panel de Control</h1>
+                <h2></h2>
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li class="current"><%= link_to "Consulta de Perfiles","control"%>
+                        <li > <%= link_to "Admin de Contenido","adminuniv"%>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Main -->
+        <div id="main-wrapper">
+            <div class="container">
+                <div class="row">
+
+                    <div class="3u 12u(mobile)">
+
+                        <!-- Búsqueda -->
+                        <section class="box">
+                            <header align="center">
+                                <h2>Elija los criterios de su búsqueda</h2>
+                            </header>
+
+                            <ul class="divided" align="center">
+                                <li>
+                                    <p>DESTINO</p>
+                                    <form>
+                                        <select id="selectPais" name="selectPais">
+                                            <option value="*">País (Todos)</option>
+                                        </select>
+
+                                        <select id="selectUniversidad" name="selectUniversidad">
+                                            <option value="*">Universidad (Todas)</option>
+                                        </select>
+                                    </form>
+                                </li>
+                                <li>
+                                    <p>ESTUDIANTE</p>
+                                    <form>
+                                        <select id="selectCarrera" name="selectCarrera">
+                                            <option value="*">Carera (Todas)</option>
+                                            <option value="Biónica">Biónica</option>
+                                            <option value="Mecatrónica">Mecatrónica</option>
+                                            <option value="Telemática">Telemática</option>
+                                        </select>
+
+                                        <select id="selectEstado" name="selectEstado">
+                                            <option value="*">Estado (Todos)</option>
+                                            <option value="Aspirante">Aspirante</option>
+                                            <option value="Postulado">Postulado</option>
+                                            <option value="Rechazado">Rechazado</option>
+                                            <option value="Movilidad">Movilidad</option>
+                                            <option value="Movilidad Concluíd">Movilidad Concluída</option>
+                                            <option value="Coach">Coach</option>
+                                        </select>
+
+                                        <select id="selectGeneracion" name="selectGeneracion">
+                                            <option value="*">Generación (Todas)</option>
+                                            <option value="*">Todas</option>
+                                        </select>
+                                        </br>
+                                        <p>Semestre</p>
+                                        <ul class=actions>
+                                            <li>
+                                                <input type="radio" name="radioSemestreA" value="*" checked> Todos
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radioSemestreA" value="A"> A
+                                                <br>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="radioSemestreB" value="B"> B
+                                                <br>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                </li>
+                                <li>
+                                    <p>ESPECÍFICO</p>
+                                    <form>
+                                        <input type="text" id="textNombre" name="textNombre" placeholder="Nombre del alumno" />
+                                        <input type="number" id="textBoleta" name="textBoleta" placeholder="Boleta del alumno" />
+                                    </form>
+                                </li>
+                                <li>
+                                    <input type="button" id="buscarPerfiles" class="btnSubmit" value="BUSCAR" />
+                                </li>
+                            </ul>
+                        </section>
+
+
+                        <!--Exportación a otro sistema-->
+                        <section class="box">
+                            <form>
+                                <ul class="actions">
+                                    <li>
+                                        <input type="button" id="generarExcelSistema" class="btnSubmit" style="white-space: normal;" value="Generar Excel para sistema CCA-IPN" />
+                                    </li>
+
+                                </ul>
+                            </form>
+                            <p>Realice primero una búsqueda con los criterios que necesita*. No olvide emplear el Estado=Aspirante</p>
+                        </section>
+
+                    </div>
+
+
+                    <div class="9u 12u(mobile)">
+
+                        <!-- Resultados de la búsqueda -->
+                        <article class="box post">
+                            <header>
+                                <h3>Resultados de la búsqueda</h3>
+                                <p>Seleccione la boleta de cualquier estudiante para acceder a su información y administrar su movilidad. Para exportar la información* relacionada con los resultados a Excel, presione el siguiente botón</p>
+                            </header>
+                            <input type="button" id="exportarExcel" class="btnSubmit" value="Exportar a Excel estos resultados" />
+                            <br>
+                            <br>
+                            <table id="catalogoUniversidades">
+                                <tr>
+                                    <th>
+                                        Boleta
+                                    </th>
+                                    <th>
+                                        Estado
+                                    </th>
+                                    <th>
+                                        Nombre
+                                    </th>
+                                    <th>
+                                        Carrera
+                                    </th>
+                                    <th>
+                                        Celular
+                                    </th>
+                                    <th>
+                                        <p>FB</p>
+                                    </th>
+                                    <th>
+                                        <p>gDrive</p>
+                                    </th>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a href="#">2011640124</a>
+                                    </td>
+                                    <td>
+                                        <p>Movilidad</p>
+                                    </td>
+                                    <td>
+                                        <p>Lorem ipsum Lorem ipsum</p>
+                                    </td>
+                                    <td>
+                                        <p>Lorem ipsum</p>
+                                    </td>
+                                    <td>
+                                        <p>999999999</p>
+                                    </td>
+                                    <td>
+                                        <a href="#"><img src="/assets/fbIcon.png"></img>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#"><img src="/assets/gdriveIcon.png"></img>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <a href="#">2011640124</a>
+                                    </td>
+                                    <td>
+                                        <p>Movilidad</p>
+                                    </td>
+                                    <td>
+                                        <p>Lorem ipsum Lorem ipsum</p>
+                                    </td>
+                                    <td>
+                                        <p>Lorem ipsum</p>
+                                    </td>
+                                    <td>
+                                        <p>999999999</p>
+                                    </td>
+                                    <td>
+                                        <a href="#"><img src="/assets/fbIcon.png"></img>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#"><img src="/assets/gdriveIcon.png"></img>
+                                        </a>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </article>
+
+                        <!-- Disclosure -->
+                        <article class="box post">
+                            <p>* En los archivos de Excel generados se cargarán todos campos de los estudiantes resultantes de la búsqueda, a excpeción del utilizado para el sistema de CCA-IPN, el cual contiene los siguientes campos: </p>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </div>

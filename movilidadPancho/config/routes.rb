@@ -1,11 +1,25 @@
 Rails.application.routes.draw do
-  get 'nuevo_usuario/misdatos'
+  get 'control', to:'admin#control'
 
-  get 'nuevo_usuario/mdeconomia'
+  get 'adminuniv', to:'admin#adminUniv'
 
-  get 'nuevo_usuario/mdidiomas'
+  get 'usuario/:id', to:'admin#usuario'
 
-  get 'nuevo_usuario/mdmovilidad'
+  get 'movilidad/:id', to:'estudiante#movilidad'
+
+  get 'universidades/:id', to:'estudiante#universidades'
+
+  get 'avisos/:id', to:'estudiante#avisos'
+
+  get 'coach/:id', to:'estudiante#coach'
+
+  get 'nuevoPerfil/1', to:'nuevo_usuario#misdatos'
+
+  get 'nuevoPerfil/4', to:'nuevo_usuario#mdeconomia'
+
+  get 'nuevoPerfil/2', to:'nuevo_usuario#mdidiomas'
+
+  get 'nuevoPerfil/3', to:'nuevo_usuario#mdmovilidad'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
