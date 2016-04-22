@@ -10,4 +10,7 @@ class EstudianteController < ApplicationController
 
   def coach
   end
+
+  def perfil
+  end
 end

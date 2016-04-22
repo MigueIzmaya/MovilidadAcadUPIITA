@@ -4,17 +4,17 @@
         <!-- Header -->
         <div id="header-wrapper">
             <div id="header">
-                <img id="banderaPostulacion" src="assets/css/images/upiita.png" alt="Universidad asignada" />
+                <img id="banderaPostulacion" src="/assets/upiita.png" alt="Universidad asignada" />
                 <!-- Logo -->
                 <h1>Nombre Completo</h1>
                 <h2 id="txtEstado">Estado</h2>
                 <!-- Nav -->
                 <nav id="nav">
                     <ul>
-                        <li><a href="misdatos.html">Mis datos</a></li>
-                        <li><a href="Movilidad.html">Movilidad</a></li>
-                        <li class="current"><a href="#">Universidades</a></li>
-                        <li><a href="Avisos.html">Avisos</a></li>
+                        <li><%= link_to "Mis Datos","../perfil/id"%></li>
+                        <li><%= link_to "Movilidad","../movilidad/id"%></li>
+                        <li class="current"><%= link_to "Universidades","../universidades/id"%></li>
+                        <li><%= link_to "Avisos","../avisos/id"%></a></li>
                     </ul>
                 </nav>
 

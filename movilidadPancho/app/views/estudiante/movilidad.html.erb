@@ -4,17 +4,17 @@
         <!-- Header -->
         <div id="header-wrapper">
             <div id="header">
-                <img id="banderaPostulacion" src="assets/css/images/upiita.png" alt="Universidad asignada" />
+                <img id="banderaPostulacion" src="/assets/upiita.png" alt="Universidad asignada" />
                 <!-- Logo -->
                 <h1>Nombre Completo</h1>
                 <h2 id="txtEstado">Estado</h2>
                 <!-- Nav -->
                 <nav id="nav">
                     <ul>
-                        <li><a href="misdatos.html">Mis datos</a></li>
-                        <li class="current"><a href="#">Movilidad</a></li>
-                        <li><a href="Universidades.html">Universidades</a></li>
-                        <li><a href="Avisos.html">Avisos</a></li>
+                        <li><%= link_to "Mis Datos","../perfil/id"%></li>
+                        <li class="current"><%= link_to "Movilidad","../movilidad/id"%></li>
+                        <li><%= link_to "Universidades","../universidades/id"%></li>
+                        <li><%= link_to "Avisos","../avisos/id"%></a></li>
                     </ul>
                 </nav>
             </div>
@@ -33,7 +33,7 @@
                                 <p>Ingresa las 3 universidades de tu preferencia.</br>
                                     Puedes cambiar tu postulación hasta la fecha de registro con CCA.</br>
                                     </br>
-                                    TOMA EN CUENTA LOS <a href="Universidades.html" target="_blank">REQUISITOS DE CADA UNIVERSIDAD</a>. No olvides actualizar tu <a href="http://www.cca.ipn.mx/IntercambioEstudiantes/movilidad-nacional/Documents/formatos/CCA01_2015-1.pdf" target="_blank">formato CCA01</a>.
+                                    TOMA EN CUENTA LOS <%= link_to "REQUISITOS DE CADA UNIVERSIDAD","../universidades/id"%>. No olvides actualizar tu <a href="http://www.cca.ipn.mx/IntercambioEstudiantes/movilidad-nacional/Documents/formatos/CCA01_2015-1.pdf" target="_blank">formato CCA01</a>.
                                 </p>
                             </header>
 
@@ -366,7 +366,7 @@
                                     </br>
                                     <ul class="actions">
                                         <li>
-                                            <a href="#" class="image featured" id="imgFoto" name="imgFoto"><img src="assets/css/images/noUniv.png" alt="" /></a>
+                                            <a href="#" class="image featured" id="imgFoto" name="imgFoto"><img src="/assets/noUniv.png" alt="" /></a>
                                         </li>
                                     </ul>
                                     <ul class="actions">
@@ -462,17 +462,17 @@
                             <ul class="divided" align="center">
                                 <li>
                                     <p class="numOpc2">1</p>
-                                    <img id="banderaUno" align="center" src="assets/css/images/noUniv.png" alt="Universidad asignada" /></br>
+                                    <img id="banderaUno" align="center" src="/assets/noUniv.png" alt="Universidad asignada" /></br>
                                     <a id="univUno" href="#">Sin registrar</a>
                                 </li>
                                 <li>
                                     <p class="numOpc2">2</p>
-                                    <img id="banderaDos" align="center" src="assets/css/images/noUniv.png" alt="Universidad asignada" /></br>
+                                    <img id="banderaDos" align="center" src="/assets/noUniv.png" alt="Universidad asignada" /></br>
                                     <a id="univDos" href="#">Sin registrar</a>
                                 </li>
                                 <li>
                                     <p class="numOpc2">3</p>
-                                    <img id="banderaTres" align="center" src="assets/css/images/noUniv.png" alt="Universidad asignada" /></br>
+                                    <img id="banderaTres" align="center" src="/assets/noUniv.png" alt="Universidad asignada" /></br>
                                     <a id="univTres" href="#">Sin registrar</a>
                                 </li>
                             </ul>

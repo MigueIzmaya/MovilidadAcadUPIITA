@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160229051107) do
+ActiveRecord::Schema.define(version: 20160422042543) do
 
   create_table "countries", force: :cascade do |t|
     t.integer  "idPaises",    limit: 4
@@ -95,13 +95,18 @@ ActiveRecord::Schema.define(version: 20160229051107) do
   end
 
   create_table "subjects", force: :cascade do |t|
-    t.integer  "idMateria",     limit: 4
-    t.string   "nombre",        limit: 255
-    t.string   "rutaTemario",   limit: 255
-    t.integer  "idUniversidad", limit: 4
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.integer  "idMateria",       limit: 4
+    t.string   "nombre",          limit: 255
+    t.string   "rutaTemario",     limit: 255
+    t.integer  "idUniversidad",   limit: 4
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.integer  "universities_id", limit: 4
+    t.integer  "university_id",   limit: 4
   end
+
+  add_index "subjects", ["universities_id"], name: "index_subjects_on_universities_id", using: :btree
+  add_index "subjects", ["university_id"], name: "index_subjects_on_university_id", using: :btree
 
   create_table "universities", force: :cascade do |t|
     t.integer  "idUniversidades",      limit: 4
@@ -114,7 +119,10 @@ ActiveRecord::Schema.define(version: 20160229051107) do
     t.integer  "idPaises",             limit: 4
     t.datetime "created_at",                       null: false
     t.datetime "updated_at",                       null: false
+    t.integer  "country_id",           limit: 4
   end
+
+  add_index "universities", ["country_id"], name: "index_universities_on_country_id", using: :btree
 
   create_table "universities_have_studyareas", force: :cascade do |t|
     t.integer  "Universities_idUniversidades", limit: 4
@@ -123,4 +131,6 @@ ActiveRecord::Schema.define(version: 20160229051107) do
     t.datetime "updated_at",                             null: false
   end
 
+  add_foreign_key "subjects", "universities"
+  add_foreign_key "universities", "countries"
 end

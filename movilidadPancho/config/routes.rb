@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'recpwd', to:'acceso#recpwd'
+
   get 'control', to:'admin#control'
 
   get 'adminuniv', to:'admin#adminUniv'
@@ -12,6 +14,8 @@ Rails.application.routes.draw do
   get 'avisos/:id', to:'estudiante#avisos'
 
   get 'coach/:id', to:'estudiante#coach'
+
+  get 'perfil/:id', to:'estudiante#perfil'
 
   get 'nuevoPerfil/1', to:'nuevo_usuario#misdatos'
 
