@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idMateria: 1
+  nombre: MyString
+  rutaTemario: MyString
+  idUniversidad: 1
+
+two:
+  idMateria: 1
+  nombre: MyString
+  rutaTemario: MyString
+  idUniversidad: 1

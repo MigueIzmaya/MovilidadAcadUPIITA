@@ -1,0 +1,183 @@
+<body class="no-sidebar">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header-wrapper">
+            <div id="header">
+                <img id="banderaPostulacion" src="/assets/upiita.png" alt="Universidad asignada" />
+                <!-- Logo -->
+                <h1>Nombre Completo</h1>
+                <h2 id="txtEstado">Estado</h2>
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li class="current"><%= link_to "Mis Datos","../perfil/id"%></li>
+                        <li><%= link_to "Movilidad","../movilidad/id"%></li>
+                        <li ><%= link_to "Universidades","../universidades/id"%></li>
+                        <li><%= link_to "Avisos","../avisos/id"%></a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+        <!-- Main -->
+        <div id="main-wrapper">
+            <div class="container">
+
+                <!--Header -->
+                <article class="box post">
+                    <div class="row">
+
+                        <div class="12u 12u(mobile)">
+                            <h2>Datos básicos y de contacto</h2>
+                        </div>
+                    </div>
+
+                    <form>
+                        <!--Nombre-->
+                        <div class="row">
+                            <div class="1u 0u(mobile)">
+                            </div>
+                            <div class="10u 10u(mobile)">
+                                <label for="inputNombre">Nombre Completo</label>
+                                <input type="text" id="inputNombre" readonly=true placeholder="Nombre ApellidoPaterno ApellidoMaterno">
+                            </div>
+                            <div class="1u 0u(mobile)">
+                            </div>
+                        </div>
+
+                        <!--Email-->
+                        <div class="row">
+                            <div class="1u 0u(mobile)">
+                            </div>
+                            <div class="8u 8u(mobile)">
+                                <label for="inputEmail">Email</label>
+                                <input type="email" id="inputEmail" placeholder="Email: ejemplo@dominio.com">
+                                <p>Si cambiaste de correo principal, es importante que nos lo notifiques actualizando tu perfil en este cuadro de texto. Es fundamental que podamos estar en contacto contigo</p>
+                            </div>
+                            <div class="2u 2u(mobile)">
+                                <label for="privadoNombre">(Privado)</label>
+                                <input type="checkbox" id="privadoNombre" value="nombrePrivado" />
+                            </div>
+                            <div class="1u 0u(mobile)">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <!--Facebook-->
+                        <div class="row">
+                            <div class="1u 0u(mobile)">
+                            </div>
+                            <div class="3u 12u(mobile)" style="text-align:right">
+                                <label for="inputEmail">Cuenta de Facebook</label>
+                                <p>https://www.facebook.com/</p>
+                            </div>
+                            <div class="6u 12u(mobile)">
+                                <br>
+                                <input type="text" id="inputFacebook" placeholder="apodo (Tal como aparece en la URL de tu perfil)">
+                                <p>Si cambiaste de cuenta de FB principal, es importante que nos lo notifiques actualizando tu perfil en este cuadro de texto. Es fundamental que podamos estar en contacto contigo</p>
+                            </div>
+                            <div class="2u 12u(mobile)">
+                                <label for="privadoNombre">(Privado)</label>
+                                <input type="checkbox" id="privadoNombre" value="nombrePrivado" />
+                            </div>
+                            <div class="1u 0u(mobile)">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <!--Teléfono-->
+                        <div class="row">
+                            <div class="1u 0u(mobile)">
+                            </div>
+                            <div class="8u 8u(mobile)">
+                                <label for="inputCelular">Teléfono Celular </label>
+                                <input type="number" id="inputCelular" placeholder="(+52)55XXXXXXXX">
+                            </div>
+                            <div class="2u 2u(mobile)">
+                                <label for="privadoCelular">(Privado)</label>
+                                <input type="checkbox" id="privadoCelular" value="celularPrivado" />
+                            </div>
+                            <div class="1u 0u(mobile)">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        
+
+
+                        <!--Boleta-->
+                        <div class="row">
+                            <div class="1u 0u(mobile)">
+                            </div>
+                            <div class="8u 8u(mobile)">
+                                <label for="inputBoleta">Boleta</label>
+                                <input type="number" readonly=true id="inputBoleta" placeholder="Boleta">
+                            </div>
+                            <div class="2u 2u(mobile)">
+                                <label for="privadoBoleta">(Privado)</label>
+                                <input type="checkbox" id="privadoBoleta" value="boletaPrivada" />
+                            </div>
+                            <div class="1u 0u(mobile)">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <!--Promedio-->
+                        <div class="row">
+                            <div class="1u 0u(mobile)">
+                            </div>
+                            <div class="8u 8u(mobile)">
+                                <label for="inputPromedio">Promedio</label>
+                                <input type="number" id="inputPromedio" placeholder="XX.XX">
+                            </div>
+                            <div class="2u 2u(mobile)">
+                                <label for="privadoPromedio">(Privado)</label>
+                                <input type="checkbox" id="privadoPromedio" value="promedioPrivado" />
+                            </div>
+                            <div class="1u 0u(mobile)">
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <!--Créditos-->
+                        <div class="row">
+                            <div class="1u 0u(mobile)">
+                            </div>
+                            <div class="8u 8u(mobile)">
+                                <label for="inputCreditos">Porcentaje de Créditos (%)</label>
+                                <input type="number" id="inputCreditos" placeholder="XX %">
+                            </div>
+                            <div class="2u 2u(mobile)">
+                                <label for="privadoCreditos">(Privado)</label>
+                                <input type="checkbox" id="privadoCreditos" value="creditosPrivado" />
+                            </div>
+                            <div class="1u 0u(mobile)">
+                            </div>
+                        </div>
+
+
+
+                        <hr>
+
+
+                        <!--Submit-->
+                        <div class="row">
+                            <div class="12u 12u(mobile)" style="text-align:center">
+                                <button class="btn btn-danger col-sm-offset-2" type="submit">Actualizar datos</button>
+                            </div>
+                        </div>
+
+
+
+                    </form>
+            </div>
+            </article>
+
+        </div>

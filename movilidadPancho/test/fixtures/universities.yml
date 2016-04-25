@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idUniversidades: 1
+  nombre: MyString
+  idioma: MyString
+  programa_intercambio: MyString
+  area_estudio: MyString
+  cupo: 1
+  tramites_especiales: MyString
+  idPaises: 1
+
+two:
+  idUniversidades: 1
+  nombre: MyString
+  idioma: MyString
+  programa_intercambio: MyString
+  area_estudio: MyString
+  cupo: 1
+  tramites_especiales: MyString
+  idPaises: 1

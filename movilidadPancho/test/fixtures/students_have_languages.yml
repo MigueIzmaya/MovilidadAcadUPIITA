@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  alumno: MyString
+  idioma: 1
+  nivel: MyString
+
+two:
+  alumno: MyString
+  idioma: 1
+  nivel: MyString

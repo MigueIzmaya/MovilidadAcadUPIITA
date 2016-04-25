@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idIdiomas: 1
+  nombre: MyString
+  tipoCertificado: MyString
+
+two:
+  idIdiomas: 1
+  nombre: MyString
+  tipoCertificado: MyString

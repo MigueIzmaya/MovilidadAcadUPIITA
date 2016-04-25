@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idAreasEstudio: 1
+  nombre: MyString
+
+two:
+  idAreasEstudio: 1
+  nombre: MyString

@@ -1,0 +1,273 @@
+<body class="right-sidebar">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <div id="header-wrapper">
+            <div id="header">
+                <img id="banderaPostulacion" src="/assets/upiita.png" alt="Universidad asignada" />
+                <!-- Logo -->
+                <h1>Nombre Completo</h1>
+                <h2 id="txtEstado">Estado</h2>
+                <nav id="nav">
+                    <ul>
+                        <li><%= link_to "Movilidad", :anchor => "zonaMovilidad" %></li>
+                        <li><%= link_to "Universidad", :anchor => "zonaUniversidad" %></li>
+                        <li><%= link_to "Datos Generales", :anchor => "zonaDatosGenerales" %></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Main -->
+        <div id="main-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="12u 12u(mobile)">
+
+                        <!-- Cambio de postulación -->
+                        <article class="box post" id="zonaMovilidad">
+                            <header>
+                                <h2>Cambiar información de movilidad</h2>
+                            </header>
+                            <!--Estados del estudiante-->
+                            <h3>Cambiar estado</h3>
+                            <br>
+                            <div class="checkout-wrap">
+                                <ul class="checkout-bar">
+
+                                    <li class="visited first">Aspirante
+                                    </li>
+
+                                    <li class="previous visited">Postulado</li>
+
+                                    <li class="previous visited">Movilidad</li>
+
+                                    <li class="active">M. Concluída</li>
+
+                                    <li class="">Coach</li>
+
+                                </ul>
+                            </div>
+                            <br>
+                            <br>
+
+                            <!--Asignación de universidades-->
+                            <div id="zonaUniversidades">
+                                <form style="text-align:center">
+                                    <hr></hr>
+                                    <h3>Asignación de CCA-IPN ó Aceptación en </h3>
+                                    <br>
+                                    <ul class=actions>
+                                        <li>
+                                            <input type="radio" name="radioUniversidad" value="" checked> Primera universidad (País)
+                                            <br>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="radioUniversidad" value="A"> Segunda universidad (País)
+                                            <br>
+
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="radioUniversidad" value="B"> Tercera universidad (País)
+                                            <br>
+
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+
+                            <!--Avisos-->
+                            <div id="zonaAvisos">
+                                <form style="text-align:center">
+                                    <hr></hr>
+                                    <h3>Escriba aquí avisos para el alumno</h3>
+                                    <p>(Ej. Asignación de universidad, cambio de estado, requisitos faltantes, etc.)</p>
+                                    <textarea placeholder="Inserte un breve texto de avisos ...."></textarea>
+                                </form>
+                            </div>
+
+                            <!--Rechazo-->
+                            <div id="zonaRechazo">
+                                <form style="text-align:center">
+                                    <hr></hr>
+                                    <ul class=actions>
+                                        <li>
+                                            <input type="checkbox" name="checkRechazado" value=""> ¿Rechazado?</input>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="checkRenuncia" value=""> (Seleccione si fue renuncia voluntaria)</input>
+                                        </li>
+                                        <li>
+                                            <input type="text" name="txtMotivosRechazo" placeholder="Ingrese los motivos" />
+
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+
+                            <!--Coach-->
+                            <div id="zonaCoach">
+                                <form style="text-align:center">
+                                    <hr></hr>
+                                    <ul class=actions>
+                                        <li>
+                                            <input type="checkbox" name="chechCoach" value=""> ¿Coach?</input>
+                                        </li>
+                                        <li>
+                                            <select id="selectPaises" name="selectPaises" multiple>
+                                                <option value="" disabled selected>Seleccione 1+ países</option>
+                                                <option value="">Lorem ipsum</option>
+                                                <option value="">Lorem ipsum</option>
+                                                <option value="">Lorem ipsum</option>
+                                                <option value="">Lorem ipsum</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <select id="selectAsesorados" name="selectAsesorados" multiple>
+                                                <option value="" disabled selected>Seleccione 1+ asesorados</option>
+                                                <option value="">Lorem ipsum</option>
+                                                <option value="">Lorem ipsum</option>
+                                                <option value="">Lorem ipsum</option>
+                                                <option value="">Lorem ipsum</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+
+
+                                </form>
+                            </div>
+
+                            <hr></hr>
+                            <div style="text-align:center">
+                                <input type="button" id="submitCambiosMovilidad" class="btnSubmit" value="Guardar todos los cambios" />
+                            </div>
+                        </article>
+
+
+                        <!--Datos de la universidad-->
+                        <article class="box post" id="zonaUniversidad">
+                            <section>
+                                <header>
+                                    <h2>Datos de Movilidad</h2>
+                                </header>
+                                <form class="cuadroSeleccion" style="text-align:center">
+                                    <!--Datos generales-->
+                                    <h3 id="tagUniversidad">Universidad: Lorem ipsum</h3>
+                                    <br>
+                                    <h3 id="tagSemestre">Semestre tipo A</h3>
+                                    <br>
+                                    <h3 id="tagCoach">Coach: Lorem ipsum</h3>
+                                    <br>
+                                    <h3 id="tagVuelo">Fechas de vuelo: DD/MM/AAAA - DD/MM/AAAA</h3>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <!--Foto-->
+                                    <ul class="actions">
+                                        <li>
+                                            <a href="#" class="image featured" style="max-width:10em; max-height:10em;" id="imgFoto" name="imgFoto"><img src="/assets/noUniv.png" alt="" /></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="actions">
+                                        <li>
+                                            <input type="button" id="descargarFoto" class="btnSubmit" value="Descargar ..." />
+                                        </li>
+                                    </ul>
+
+                                    <!--Materias-->
+                                    <h3>Materias en curso</h3>
+                                    <table class="default" id="materias">
+                                        <tr>
+                                            <td>Materia</td>
+                                            <td>Calificación</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lorem impsum</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lorem impsum</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lorem impsum</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lorem impsum</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lorem impsum</td>
+                                            <td>10</td>
+                                        </tr>
+                                    </table>
+
+                                </form>
+                            </section>
+                        </article>
+
+
+                        <!--Datos generales-->
+                        <article class="box post" id=zonaDatosGenerales>
+                            <section>
+                                <section>
+                                    <header>
+                                        <h2>Datos Generales</h2>
+                                    </header>
+                                    <form class="cuadroSeleccion" style="text-align:center; width:70%;">
+                                        <!--Datos generales-->
+                                        <p id="tagIngresoMensual">Ingreso mensual:$99999.99</p>
+                                        <p id="tagDependientesIngresos">Dependientes del ingreso: Lorem ipsum</p>
+                                        <p id="tagEmpleo">Empleo: Lorem ipsum</p>
+                                        <p id="tagBeca">Beca Actual: Lorem ipsum</p>
+                                        <br>
+                                        <h3>Idiomas</h3>
+                                        <table class="default" id="materias">
+                                            <tr>
+                                                <td>Nombre</td>
+                                                <td>Nivel</td>
+                                                <td>Certificado</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lorem Ipsum</td>
+                                                <td>Lorem Ipsum</td>
+                                                <td>Lorem Ipsum</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lorem Ipsum</td>
+                                                <td>Lorem Ipsum</td>
+                                                <td>Lorem Ipsum</td>
+                                            </tr>
+                                        </table>
+
+                                        <!--Materias-->
+                                        <h3>Materias que desea tomar al volver</h3>
+                                        <table class="default" id="materiasVolver">
+                                            <tr>
+                                                <td>Lorem Ipsum</td>
+                                                <td>Lorem Ipsum</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lorem Ipsum</td>
+                                                <td>Lorem Ipsum</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lorem Ipsum</td>
+                                                <td>Lorem Ipsum</td>
+                                            </tr>
+                                        </table>
+
+                                    </form>
+                                </section>
+                        </article>
+
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>

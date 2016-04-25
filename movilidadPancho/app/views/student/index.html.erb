@@ -1,0 +1,51 @@
+
+    <div id="wrapper">
+
+        <div id="bg"></div>
+
+        <!-- Main -->
+        <section id="main">
+            <header>
+                <span class="avatar"><img src="/assets/logoMovilidad.png" alt="Logo Movilidad UPIITA" /></span>
+                <h1>Movilidad Académica</h1>
+                <p id="subtitulo">UPIITA-IPN</p>
+            </header>
+
+            <hr />
+            <h2>¡Bienvenido(a)! Inicio de Sesión</h2>
+            <form method="post" action="#">
+                <div class="field">
+                    <input type="number" name="boleta" id="boleta" placeholder="Boleta" />
+                </div>
+                <div class="field">
+                    <input type="password" name="passwd" id="passwd" placeholder="Contraseña" />
+                </div>
+                <ul class="actions">
+                    <li><a href="Avisos.html" class="button">Iniciar Sesión</a></li>
+                </ul>
+            </form>
+            <hr />
+            <h2>¿Nuevo usuario? <%= link_to "Regístrate aquí","nuevo_usuario/misdatos"%></h2>
+            <hr />
+            <h2>¿Olvidaste tu contraseña? <%= link_to "Recupérala aquí","recpwd"%></h2>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; Departamento de Extensión y Apoyo Educativos. UPIITA - IPN. 2016</li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+    <script>
+        if ('addEventListener' in window) {
+            window.addEventListener('load', function () {
+                document.body.className = document.body.className.replace(/\bis-loading\b/, '');
+            });
+            document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+        }
+    </script>
