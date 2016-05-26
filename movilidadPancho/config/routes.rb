@@ -1,37 +1,59 @@
 Rails.application.routes.draw do
+  get 'iniciar_sesion/new'
+
+  get 'iniciar_sesion/create'
+
+  get 'iniciar_sesion/destroy'
+
+  #get 'sessions/new'
+
+  get 'sessions/create'
+
+  get 'sessions/destroy'
+
   get 'recpwd', to:'acceso#recpwd'
 
   get 'control', to:'admin#control'
 
   get 'adminuniv', to:'admin#adminUniv'
 
-  get 'usuario/:id', to:'admin#usuario'
+  get 'usuario', to:'admin#usuario'
 
-  get 'movilidad/:id', to:'estudiante#movilidad'
+  get 'movilidad', to:'estudiante#movilidad'
 
-  get 'universidades/:id', to:'estudiante#universidades'
+  get 'universidades', to:'estudiante#universidades'
 
-  get 'avisos/:id', to:'estudiante#avisos'
+  get 'avisos', to:'estudiante#avisos'
 
-  get 'coach/:id', to:'estudiante#coach'
+  get 'coach', to:'estudiante#coach'
 
-  get 'perfil/:id', to:'estudiante#perfil'
+  get 'perfil', to:'estudiante#perfil'
 
-  get 'nuevoPerfil/1', to:'nuevo_usuario#misdatos'
+  get 'nuevoPerfil', to:'nuevo_usuario#misdatos'
 
   get 'nuevoPerfil/4', to:'nuevo_usuario#mdeconomia'
 
-  get 'nuevoPerfil/2', to:'nuevo_usuario#mdidiomas'
+  post 'nuevoPerfil/2', to:'nuevo_usuario#mdidiomas'
 
   get 'nuevoPerfil/3', to:'nuevo_usuario#mdmovilidad'
+
+  get 'llenarBD', to:'student#llenarBD'
+
+  post 'validacion', to:'nuevo_usuario#validacion'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-	resources :student
-	root 'student#index'
+    
+  resources :sessions, only: [:new, :create, :destroy]
+  get '/signin',  to: 'sessions#new'
+  get '/signout', to: 'sessions#destroy'
+    
+  #resources :student
+  root 'sessions#new'
+  #root 'student#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

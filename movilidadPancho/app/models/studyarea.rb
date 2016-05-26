@@ -1,3 +1,3 @@
 class Studyarea < ActiveRecord::Base
-	has_many :universities_have_studyareas
+	has_and_belongs_to_many :universities
 end

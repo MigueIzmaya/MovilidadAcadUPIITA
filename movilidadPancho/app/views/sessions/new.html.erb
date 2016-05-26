@@ -12,28 +12,28 @@
             </header>
 
             <hr />
-            <h2>¡Bienvenido(a)! Inicio de Sesión</h2>
-            
-            <form method="post" action="#">
-                
-                <div class="field">
-                    <input type="password" name="passwd" id="passwd" placeholder="Contraseña" />
-                </div>
-                <ul class="actions">
-                    <li><a href="Avisos.html" class="button">Iniciar Sesión</a></li>
-                </ul>
-            </form>
+            <h2>¡Bienvenido(a)! Inicio de Sesión</h2>     
             
             <%= form_for(:session, url: sessions_path) do |f| %>
-                <%= f.label :email %>
-                <%= f.text_field :email %>
-                <%= f.label :password %>
-                <%= f.password_field :password %>
-                <%= f.label "Remember me" %>
-                <%= f.check_box :remember_session %>
-                <%= f.submit "Iniciar sesión" %>
-            <% end %>
             
+                <% if flash[:notice] %>
+                    <div class="notice"><%= flash[:notice] %></div>            
+                <% end %>
+                
+                <div class="field">
+                    <%= f.text_field :boleta, :placeholder => "Boleta" %>               
+                </div>
+            
+                <div class="field">
+                    <%= f.password_field :contrasena, :placeholder => "Contraseña" %>
+                </div>
+            
+                <div class="field">
+                    <%# <%= f.check_box :remember_session %>
+                    <%= f.submit "Iniciar sesión" %>
+                </div>      
+                
+            <% end %>           
            
             <hr />
             <h2>¿Nuevo usuario? <%= link_to "Regístrate aquí","nuevoPerfil"%></h2>

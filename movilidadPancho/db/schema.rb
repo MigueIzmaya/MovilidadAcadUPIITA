@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160422042543) do
+ActiveRecord::Schema.define(version: 20160426233851) do
+
+  create_table "academicselections", force: :cascade do |t|
+    t.integer "student_id",    limit: 4
+    t.integer "university_id", limit: 4
+    t.boolean "asignacion"
+    t.integer "prioridad",     limit: 4
+  end
+
+  add_index "academicselections", ["student_id"], name: "index_academicselections_on_student_id", using: :btree
+  add_index "academicselections", ["university_id"], name: "index_academicselections_on_university_id", using: :btree
 
   create_table "countries", force: :cascade do |t|
     t.integer  "idPaises",    limit: 4
@@ -28,6 +38,15 @@ ActiveRecord::Schema.define(version: 20160422042543) do
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
   end
+
+  create_table "lectures", force: :cascade do |t|
+    t.integer "student_id",   limit: 4
+    t.integer "subject_id",   limit: 4
+    t.float   "calificacion", limit: 24
+  end
+
+  add_index "lectures", ["student_id"], name: "index_lectures_on_student_id", using: :btree
+  add_index "lectures", ["subject_id"], name: "index_lectures_on_subject_id", using: :btree
 
   create_table "students", force: :cascade do |t|
     t.string   "CURP",               limit: 255
@@ -94,18 +113,24 @@ ActiveRecord::Schema.define(version: 20160422042543) do
     t.datetime "updated_at",                 null: false
   end
 
-  create_table "subjects", force: :cascade do |t|
-    t.integer  "idMateria",       limit: 4
-    t.string   "nombre",          limit: 255
-    t.string   "rutaTemario",     limit: 255
-    t.integer  "idUniversidad",   limit: 4
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
-    t.integer  "universities_id", limit: 4
-    t.integer  "university_id",   limit: 4
+  create_table "studyareas_universities", id: false, force: :cascade do |t|
+    t.integer "university_id", limit: 4
+    t.integer "studyarea_id",  limit: 4
   end
 
-  add_index "subjects", ["universities_id"], name: "index_subjects_on_universities_id", using: :btree
+  add_index "studyareas_universities", ["studyarea_id"], name: "index_studyareas_universities_on_studyarea_id", using: :btree
+  add_index "studyareas_universities", ["university_id"], name: "index_studyareas_universities_on_university_id", using: :btree
+
+  create_table "subjects", force: :cascade do |t|
+    t.integer  "idMateria",     limit: 4
+    t.string   "nombre",        limit: 255
+    t.string   "rutaTemario",   limit: 255
+    t.integer  "idUniversidad", limit: 4
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+    t.integer  "university_id", limit: 4
+  end
+
   add_index "subjects", ["university_id"], name: "index_subjects_on_university_id", using: :btree
 
   create_table "universities", force: :cascade do |t|
@@ -130,6 +155,15 @@ ActiveRecord::Schema.define(version: 20160422042543) do
     t.datetime "created_at",                             null: false
     t.datetime "updated_at",                             null: false
   end
+
+  create_table "university_languages", force: :cascade do |t|
+    t.integer "university_id", limit: 4
+    t.integer "language_id",   limit: 4
+    t.string  "nivel",         limit: 255
+  end
+
+  add_index "university_languages", ["language_id"], name: "index_university_languages_on_language_id", using: :btree
+  add_index "university_languages", ["university_id"], name: "index_university_languages_on_university_id", using: :btree
 
   add_foreign_key "subjects", "universities"
   add_foreign_key "universities", "countries"
